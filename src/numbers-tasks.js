@@ -627,10 +627,10 @@ function getCountOfOddNumbers(number) {
   let oddCount = 0;
   let numAbs = Math.abs(number);
   while (numAbs > 0) {
-    if (numAbs % 2 === 0) {
+    if (numAbs % 2 !== 0) {
       oddCount += 1;
-      numAbs -= 1;
     }
+    numAbs -= 1;
   }
 
   return oddCount;
